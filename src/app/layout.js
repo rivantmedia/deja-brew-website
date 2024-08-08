@@ -4,7 +4,11 @@ import "./globals.css";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-const dela = Dela_Gothic_One({ subsets: ["latin"], weight: ["400"] });
+const dela = Dela_Gothic_One({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Create Next App",

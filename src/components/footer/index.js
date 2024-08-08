@@ -3,8 +3,16 @@ import Image from "next/image";
 import { David_Libre } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import NavLink from "../link";
-const Montser = Montserrat({ subsets: ["latin"], weight: ["700"] });
-const david = David_Libre({ subsets: ["latin"], weight: ["400"] });
+const Montser = Montserrat({
+  subsets: ["latin"],
+  weight: ["700"],
+  display: "swap",
+});
+const david = David_Libre({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
 
 function Footer() {
   return (
@@ -21,17 +29,34 @@ function Footer() {
           <div className={styles.txtinf}>
             <span className={styles.txttitle}>Deja Brew</span>
             <span className={styles.txtdesc + " " + david.className}>
-             {"Step into a world where coffee isn't just a beverage,but a journey that speaks of home."}
+              {
+                "Step into a world where coffee isn't just a beverage,but a journey that speaks of home."
+              }
             </span>
             <span className={styles.icon}>
               <a>
-                <Image src="/icons/insta-icon.svg" height={15} width={15} alt="Instagram Icon"/>
+                <Image
+                  src="/icons/insta-icon.svg"
+                  height={15}
+                  width={15}
+                  alt="Instagram Icon"
+                />
               </a>
               <a>
-                <Image src="/icons/linkdin-icon.svg" height={15} width={15}  alt="LinkedIn Icon"/>
+                <Image
+                  src="/icons/linkdin-icon.svg"
+                  height={15}
+                  width={15}
+                  alt="LinkedIn Icon"
+                />
               </a>
               <a>
-                <Image src="/icons/x-icon.svg" height={15} width={15}  alt="X Icon"/>
+                <Image
+                  src="/icons/x-icon.svg"
+                  height={15}
+                  width={15}
+                  alt="X Icon"
+                />
               </a>
             </span>
           </div>

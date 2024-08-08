@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  background: var(--white);
+  background-image: url("/light-coffee-pattern.png");
+  background-repeat: repeat;
+  background-size: 150px;
 }
 :root {
   /* colors  */
@@ -23,6 +27,7 @@ body {
 .bigboody {
   margin-top: 150px;
 }
+
 @media (max-width: 768px) {
   .bigboody {
     margin-top: 114px;

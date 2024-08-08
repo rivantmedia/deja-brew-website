@@ -1,0 +1,142 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.heroimage {
+  height: 27vw;
+  /* width: 400px; */
+  width: auto;
+}
+.herotagline {
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  /* font-size: 45px; */
+  font-size: 3vw;
+  text-align: right;
+  color: var(--brown);
+}
+.coffee {
+  /* font-size: 55px; */
+  font-size: 4vw;
+  color: var(--orange);
+}
+.home {
+  /* font-size: 55px; */
+  font-size: 4vw;
+  color: var(--light-brown);
+}
+.clouds {
+  /* width: 100vw; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -9%;
+  margin-bottom: -8%;
+  /* z-index: -100; */
+}
+
+.cloudleft {
+  /* z-index: -100; */
+  margin-left: -10%;
+  width: 55%;
+  /* width: 741px; */
+  height: auto;
+  /* animation: motion 6s infinite ease-in-out; */
+}
+
+.cloudright {
+  margin-right: -10%;
+  width: 55%;
+  /* width: 741px; */
+  height: auto;
+  /* animation: motion 5s infinite ease-in-out; */
+}
+.arrowcontainer {
+  /* z-index: -1; */
+  /* left: 50%; */
+  width: 100%;
+  bottom: 4%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.arrowlink {
+  z-index: 1;
+  cursor: pointer;
+}
+.arrows {
+  width: 6vw;
+}
+.heromobile {
+  display: none;
+}
+.upperarrow {
+  animation: motion 2s infinite ease-in-out;
+}
+.heroimagemobile {
+  height: auto;
+  width: 78vw;
+}
+@keyframes motion {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 4px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    display: none;
+  }
+  .heromobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coffee {
+    font-size: 10vw;
+  }
+  .home {
+    font-size: 8vw;
+  }
+  .herotagline {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    letter-spacing: normal;
+    align-items: center;
+    font-size: 6vw;
+    word-spacing: 2px;
+  }
+  .cloudleft {
+    /* width: 1000vw; */
+    width: auto;
+    height: 70vh;
+    margin-left: -180%;
+    margin-top: -45%;
+  }
+  .cloudright {
+    /* margin-right: -50%; */
+    width: auto;
+    margin-top: -45%;
+    height: 70vh;
+    width: auto;
+  }
+  .arrows {
+    width: 20vw;
+  }
+  .arrowcontainer {
+    bottom: 15%;
+  }
+}
