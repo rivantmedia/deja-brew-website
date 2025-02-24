@@ -1,8 +1,9 @@
-export default async function Home() {
+import Navbar from "./_components/Navbar";
 
+export default function Home() {
   return (
-    <div>
-      Hello World
-    </div>
+    <main className="min-h-screen m-0">
+      <Navbar />
+    </main>
   );
 }

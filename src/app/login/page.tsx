@@ -1,8 +1,8 @@
-"use server";
+"use client";
 
 import { signIn} from "next-auth/react";
 
-export default function LoginPage() {
+export default async function LoginPage() {
 
   return (
     <div className="flex min-h-screen items-center justify-center">
