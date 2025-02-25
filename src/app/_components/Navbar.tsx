@@ -28,6 +28,7 @@ export default function Navbar() {
           <li><NavLink href="/about" variant="light">About</NavLink></li>
           <li><NavLink href="/menu" variant="light">Menu</NavLink></li>
           <li><NavLink href="/location" variant="light">Locations</NavLink></li>
+          <li><NavLink href="/contact" variant="light">Contact Us</NavLink></li>
         </ul>
 
         {/* Hamburger Menu */}
