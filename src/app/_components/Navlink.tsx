@@ -11,11 +11,11 @@ type NavLinkProps = {
 
 export default function NavLink({ href, children, variant = "light", className }: NavLinkProps) {
     const baseClasses =
-    "relative transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:transition-all before:duration-200 hover:before:w-full font-dela text-[20px] text-[var(--brown)] font-normal";
+    "relative transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:transition-all before:duration-200 hover:before:w-full font-dela text-[23px] font-normal mx-0";
   const variantClasses =
-    variant === "light"
-      ? "before:bg-[var(--brown)]"
-      : "before:bg-[var(--white)]";
+    variant === "light" 
+      ? "before:bg-[var(--brown)]  text-[var(--brown)] hover:text-[var(--dark-brown)]"
+      : "before:bg-[var(--blue)]  text-[var(--white)] hover:text-[var(--blue)]";
     return (
         <Link href={href} className={`${baseClasses} ${variantClasses}`}>
         {children}
