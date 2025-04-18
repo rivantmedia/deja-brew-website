@@ -12,7 +12,7 @@ const ExperienceSection: FC = () => {
       </span>
       
       <InfoCard title="Exceptional Beans">
-        Our journey starts at the source. We meticulously select beans from the world's finest coffee-growing regions, ensuring that each batch meets our exacting standards for flavor, quality, and sustainability.
+        Our journey starts at the source. We meticulously select beans from the world&apos;s finest coffee-growing regions, ensuring that each batch meets our exacting standards for flavor, quality, and sustainability.
       </InfoCard>
       
       <InfoLine />
@@ -24,7 +24,7 @@ const ExperienceSection: FC = () => {
       <InfoLine />
       
       <InfoCard title="A Taste of Tradition">
-        We pay homage to coffee's rich history by incorporating traditional brewing techniques with a modern twist. Whether you prefer a classic pour-over or a velvety latte, our menu is a celebration of coffee's timeless appeal.
+        We pay homage to coffee&apos;s rich history by incorporating traditional brewing techniques with a modern twist. Whether you prefer a classic pour-over or a velvety latte, our menu is a celebration of coffee&apos;s timeless appeal.
       </InfoCard>
     </div>
   );

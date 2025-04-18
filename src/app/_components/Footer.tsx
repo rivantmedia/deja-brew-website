@@ -29,7 +29,7 @@ export default function Footer() {
                     <div className="flex flex-col justify-between h-[100px]">
                         <span className="text-white text-[25px]">Deja Brew</span>
                         <span className={`text-[15px] text-white ${davidLibre.className}`}>
-                            Step into a world where coffee isn't just a beverage,
+                            Step into a world where coffee isn&apos;t just a beverage,
                             but a journey that speaks of home.
                         </span>
                         <div className="text-white flex flex-row gap-2">

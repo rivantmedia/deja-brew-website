@@ -9,7 +9,7 @@ type NavLinkProps = {
   className?: string;
 };
 
-export default function NavLink({ href, children, variant = "light", className }: NavLinkProps) {
+export default function NavLink({ href, children, variant = "light" }: NavLinkProps) {
     const baseClasses =
     "relative transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:transition-all before:duration-200 hover:before:w-full font-dela text-[23px] font-normal mx-0";
   const variantClasses =
